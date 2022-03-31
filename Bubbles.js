@@ -3,6 +3,7 @@ var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44
 var tests = scores.length;
 var highScore = 0;
 var best = [];
+
 for (i = 0; i < tests; i++) {
     console.log("Bubble solution #" + i + " score: " + scores[i]);
     if (highScore < scores[i]) {

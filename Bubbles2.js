@@ -12,10 +12,6 @@ function printAndGetHighScore(scores) {
     return highScore;
 }
 
-var highScore = printAndGetHighScore(scores);
-console.log("Bubble tests: " + scores.length)
-console.log("Highest bubble score: " + highScore);
-
 function getBestResults(scores, highScore) {
     var best = [];
     for (i = 0; i < scores.length; i++) {
@@ -25,5 +21,9 @@ function getBestResults(scores, highScore) {
     }
     return best;
 }
+
+var highScore = printAndGetHighScore(scores);
+console.log("Bubble tests: " + scores.length)
+console.log("Highest bubble score: " + highScore);
 var bestSolution = getBestResults(scores, highScore);
 console.log("Solutions with the highest score: " + bestSolution);
